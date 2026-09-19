@@ -51,7 +51,7 @@ aside h2 {
 }
 
 aside {
-    width: 20rem;
+    width: rem;
     text-align: center;
 }
 
@@ -64,7 +64,7 @@ aside img {
 }
 
 footer {
-    margin-top: 15px;
+    margin-top: px;
     border-top: 1px solid #000;
     text-align: center;
 }
