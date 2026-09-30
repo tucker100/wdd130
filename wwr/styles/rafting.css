@@ -88,7 +88,8 @@ nav a:hover {
 .hero h1 {
     position: absolute;
     top: 20px;
-    width: 100%;
+    left: 0;
+    right: 0;
     padding: 16px;
     text-align: center;
     opacity: 0.7;
@@ -100,7 +101,7 @@ nav a:hover {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    width: 95%;
+    right: 20px;
     margin: 0;
     padding: 1rem;
     background-color: var(--light-color);
@@ -201,4 +202,25 @@ footer {
 .socialmedia img {
     width: 32px;
     height: 32px;
+}
+
+/* Small Screens */
+
+@media (max-width: 768px) {
+    nav ul {
+        gap: 1rem;
+    }
+
+    .hero article {
+        position: static;
+        margin: 1rem;
+    }
+
+    .history-content {
+        grid-template-columns: 1fr;
+    }
+
+    .adventure-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
