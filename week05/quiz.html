@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A short online quiz about HTML and CSS.">
+  <title>HTML and CSS Quiz</title>
+  <link rel="stylesheet" href="../styles/quiz.css">
+</head>
+<body>
+  <main>
+    <h1>HTML and CSS Quiz</h1>
+    <p class="intro">Answer all four questions, then select Submit Quiz.</p>
+
+    <form action="#" method="get">
+      <div class="question">
+        <label for="q1">1. Fill in the blank: The CSS property that adds space between an element's content and its border is called ________.</label>
+        <input type="text" id="q1" name="q1" required>
+      </div>
+
+      <div class="question">
+        <label for="q2">2. In a sentence or two, explain the difference between an id and a class in HTML.</label>
+        <textarea id="q2" name="q2" rows="4" required></textarea>
+      </div>
+
+      <div class="question">
+        <label for="q3">3. Which attribute makes a table cell extend down across multiple rows?</label>
+        <select id="q3" name="q3" required>
+          <option value="" selected disabled>Choose One ...</option>
+          <option value="colspan">colspan</option>
+          <option value="rowspan">rowspan</option>
+          <option value="rows">rows</option>
+          <option value="span">span</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label for="q4">4. How many heading levels (h1 through h?) does HTML provide?</label>
+        <input type="number" id="q4" name="q4" min="1" max="10" step="1" required>
+      </div>
+
+      <button type="submit">Submit Quiz</button>
+    </form>
+  </main>
+</body>
+</html>
