@@ -18,6 +18,7 @@
 body {
     font-family: var(--body-font);
     color: var(--dark-color);
+    overflow-x: hidden;
 }
 
 header,
@@ -103,14 +104,20 @@ nav a:hover {
 
 /* Hero Section */
 
+/* The hero stretches the full width of the browser window,
+   even though the rest of the page is limited to 1200px. */
 .hero {
     position: relative;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
 }
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+    max-height: 600px;
+    object-fit: cover;
 }
 
 .hero h1 {
